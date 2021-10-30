@@ -6,6 +6,6 @@
     <string name="go_to_first_page">Go to First Page</string>
     <string name="welcome_to_page_2">Welcome to Page 2!</string>
     <string name="welcome_to_page_1">Welcome to Page 1</string>
-    <string name="req_is">\"Response is: \"</string>
-    <string name="did_not_work">That didn\'t work!</string>
+    <string name="get_data">Get Data</string>
+    <string name="show_toast">Show Toast</string>
 </resources>

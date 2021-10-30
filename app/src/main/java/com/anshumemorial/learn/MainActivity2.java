@@ -15,7 +15,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        Button Btn1 = findViewById(R.id.btn1);
+        Button Btn1 = findViewById(R.id.go_to_second_page);
 
         Btn1.setOnClickListener(v -> {
 

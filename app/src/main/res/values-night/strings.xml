@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="go_to_second_page">Go to Second Page</string>
+    <string name="welcome_in_page_1">Welcome in Page 1</string>
+    <string name="welcome_in_page_2">Welcome in Page 2</string>
+    <string name="go_to_first_page">Go to First Page</string>
+    <string name="welcome_to_page_2">Welcome to Page 2!</string>
+    <string name="welcome_to_page_1">Welcome to Page 1</string>
+    <string name="req_is">\"Response is: \"</string>
+    <string name="did_not_work">That didn\'t work!</string>
+</resources>

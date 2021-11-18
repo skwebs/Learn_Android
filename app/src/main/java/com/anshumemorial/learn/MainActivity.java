@@ -2,6 +2,7 @@ package com.anshumemorial.learn;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -22,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button getData = findViewById(R.id.get_data);
         Button goToSecondPage = findViewById(R.id.go_to_second_page);
-        Button showToastBtn = findViewById(R.id.show_toast_btn);
         Button goToRegPage = findViewById(R.id.go_to_reg_page);
+        Button userList = findViewById(R.id.user_list_btn);
 
         getData.setOnClickListener(v -> getData());
 
         goToSecondPage.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+            Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
             startActivity(intent);
         });
 
@@ -37,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        showToastBtn.setOnClickListener(v -> Toast.makeText(this,"Welcome in First Page", Toast.LENGTH_LONG).show());
-//      Toast
-        Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.welcome_to_page_1), Toast.LENGTH_LONG);
-        toast.show();
+        userList.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, UserListActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void getData() {
@@ -57,7 +58,10 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
-                }, System.out::print);
+                },error -> {
+                    Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show();
+                    Log.i("Registration Error: ", error.toString());
+                });
 
         requestQueue.add(jsonObjectRequest);
 

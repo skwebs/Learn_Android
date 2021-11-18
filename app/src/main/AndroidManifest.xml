@@ -14,10 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Learn">
         <activity
+            android:name=".UserListActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".WebViewActivity"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity

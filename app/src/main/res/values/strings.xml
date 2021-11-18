@@ -2,10 +2,11 @@
     <string name="app_name">Learn</string>
     <string name="go_to_second_page">Go to Second Page</string>
     <string name="welcome_in_page_1">Welcome in Page 1</string>
-    <string name="welcome_in_page_2">Welcome in Page 2</string>
-    <string name="go_to_first_page">Go to First Page</string>
-    <string name="welcome_to_page_2">Welcome to Page 2!</string>
     <string name="welcome_to_page_1">Welcome to Page 1</string>
     <string name="get_data">Get Data</string>
     <string name="show_toast">Show Toast</string>
+    <string name="new_user_register">New User Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
 </resources>
